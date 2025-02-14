@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Skills</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      /* Skills Section */
+      #skills {
+        padding: 60px 0;
+        background-color: #f8f9fa; /* Light background */
+      }
+
+      .skill-card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .skill-icon {
+        font-size: 48px;
+        color: #3498db; /* Icon color */
+        margin-bottom: 20px;
+      }
+
+      .skill-card h4 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #2c3e50; /* Dark text color */
+      }
+
+      .skill-card ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skill-card ul li {
+        font-size: 16px;
+        color: #555; /* Subdued text color */
+        margin-bottom: 10px;
+      }
+
+      /* Animation for skill cards */
+      .skill-item {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .skill-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="portfolio-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center light-background sticky-top"
+    >
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <h1 class="sitename">Sunkeerth</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/sunkeerth-ab14b3337/"
+            class="social-icon"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="https://www.hackerrank.com/profile/sunkeerth123"
+            class="social-icon"
+            ><i class="bi bi-HackerRank"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=en" class="social-icon"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://x.com/Sunkeerth339557" class="social-icon"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=en" class="social-icon"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+
+        <style>
+          .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Adjust the space between icons */
+          }
+          .social-links a {
+            color: inherit;
+            text-decoration: none;
+          }
+          .social-links a i {
+            font-size: 24px; /* You can adjust the size of icons */
+          }
+        </style>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Skills Section -->
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Skills</h2>
+          <p>
+            Here are the skills I have developed over the years. I am
+            continuously improving and learning new technologies.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <!-- Skill Item 1 -->
+            <div
+              class="col-lg-4 col-md-6 skill-item"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="bi bi-code-slash"></i>
+                  <!-- Icon for Programming Languages -->
+                </div>
+                <h4>Programming Languages</h4>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>NodeJs</li>
+                  <li>Express</li>
+                  <li>React</li>
+                  <li>Python</li>
+                  <li>C/C++</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                  <li>AIML</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skill Item 2 -->
+            <div
+              class="col-lg-4 col-md-6 skill-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="bi bi-tools"></i>
+                  <!-- Icon for Software & Tools -->
+                </div>
+                <h4>Software & Tools</h4>
+                <ul>
+                  <li>Vscode</li>
+                  <li>Eclipse</li>
+                  <li>Postman (Basic)</li>
+                  <li>BandLab (Music)</li>
+                  <li>Blender (Graphics/3D Models)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skill Item 3 -->
+            <div
+              class="col-lg-4 col-md-6 skill-item"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="bi bi-robot"></i>
+                  <!-- Icon for AI & Machine Learning -->
+                </div>
+                <h4>AI & Machine Learning</h4>
+                <ul>
+                  <li>Machine Learning Algorithms</li>
+                  <li>Data Preprocessing</li>
+                  <li>TensorFlow, Keras</li>
+                  <li>Natural Language Processing (NLP)</li>
+                  <li>Voice Recognition</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skill Item 4 -->
+            <div
+              class="col-lg-4 col-md-6 skill-item"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="bi bi-cpu"></i>
+                  <!-- Icon for Hardware & Robotics -->
+                </div>
+                <h4>Hardware & Robotics</h4>
+                <ul>
+                  <li>Hands-on experience in hardware projects</li>
+                  <li>Participated in Hackathons</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+      <!-- End Skills Section -->
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">Sunkeerth</strong>
+            <span>All Rights Reserved<br /></span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/sunkeerth-ab14b3337/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.hackerrank.com/profile/sunkeerth123"
+            ><i class="bi bi-HackerRank"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=en"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://x.com/Sunkeerth339557"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=en"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by
+          <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <script>
+      // Add this to your main.js file
+      document.addEventListener("DOMContentLoaded", function () {
+        const skillItems = document.querySelectorAll(".skill-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 } // Trigger when 50% of the element is visible
+        );
+
+        skillItems.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
